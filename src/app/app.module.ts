@@ -32,6 +32,7 @@ import { AboutComponent } from './about/about.component';
       {path: 'components/matches', component: MatchesComponent},
       {path: 'components/previous-matches', component: PreviousMatchesComponent},
       {path: 'components/matches', component: H2HComponent},
+      {path: 'about', component: AboutComponent},
 
     ])
   ],
