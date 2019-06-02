@@ -1,5 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<!--<div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
   </h1>
@@ -17,5 +17,38 @@
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
 </ul>
+-->
+<div class="entire-page">
+  <div class="container">
+    <h1 class="title m pt pb"> <img class="mr alg" src="../assets/BSA_Logo.png" alt="Campeonato Brasileiro Série A"
+        style="width:150px;height:110px;">Campeonato Brasileiro Série A </h1>
 
-<router-outlet></router-outlet>
+    <ul style="background-color:#b2b2 ">
+      <li> <a routerLink="/components/players">
+          <h2>Players</h2>
+        </a></li>
+      <li> <a routerLink="/components/standings">
+          <h2> Standings </h2>
+        </a></li>
+      <li> <a routerLink="/components/matches">
+          <h2>All Matches </h2>
+        </a></li>
+      <li> <a routerLink="/components/previous-matches">
+          <h2>SPFC Matches </h2>
+        </a></li>
+      <li> <a routerLink="/components/h2-h">
+          <h2>H-2-H </h2>
+        </a></li>
+      <li><a routerLink="/about/about.component.html">
+        <h2>About</h2>
+      </a></li>
+    </ul>
+
+    <div class="margin">
+      <router-outlet></router-outlet>
+    </div>
+
+  </div>
+
+
+</div>

@@ -1,0 +1,16 @@
+
+<p> <font size="5"><b> São Paulo FC</b></font> </p>
+<table class = "h">
+    
+  <tr style="background-color:#b2b2b2 ">
+    <th> Name</th>
+    <th> Position</th>
+    <th> Nationality </th>
+  </tr>
+  <tr *ngFor = "let sqd of squad">
+    <td> {{sqd.name}}</td>
+    <td> {{sqd.position}} </td>
+    <td> {{sqd.nationality}} </td>
+
+  </tr>
+</table>

@@ -1,0 +1,20 @@
+
+
+<table>
+  <tr style="background-color:#b2b2b2 ">
+    <th> Rank </th>
+    <th> Teams</th>
+    <th>  Games Won  </th>
+    <th>  Draw Games  </th>
+    <th>  Games Lost  </th>
+    <th>  Game Points  </th>
+  </tr>
+  <tr *ngFor = "let stand of table">
+    <td> {{stand.position}} </td>
+    <td>{{stand.team.name}}</td>
+    <td>{{stand.won}}</td>
+    <td>{{stand.draw}}</td>
+    <td>{{stand.lost}}</td>
+    <td>{{stand.points}}</td>
+  </tr>
+</table>

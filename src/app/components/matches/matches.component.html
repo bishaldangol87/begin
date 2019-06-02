@@ -1,0 +1,24 @@
+
+<p> <font size="+5"> ALL MATCHES</font> </p>
+<table>
+    
+  <tr>
+    
+    <th> Home Team</th>
+    <th>Goals</th>
+    <th> </th>
+    <th>Goals</th>
+    <th> Away Team </th>
+    <th> Match Date</th>
+    
+  </tr>
+  <tr *ngFor = "let game of match">
+    
+    <td align='center'> {{game.homeTeam.name}} </td>
+    <td align='center'>{{game.score.fullTime.homeTeam}}</td>
+    <td align='center'> -- </td>
+    <td align='center'>{{game.score.fullTime.awayTeam}}</td>
+    <td align='center'> {{game.awayTeam.name}} </td>
+    <td align='center'> {{game.utcDate | date:'shortDate'}}</td>
+  </tr>
+</table>
